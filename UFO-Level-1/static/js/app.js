@@ -2,8 +2,6 @@
 var tableData = data;
 
 // YOUR CODE HERE!
-// from data.js
-let tableData = data;
 let tbody = d3.select("tbody");
 let table = d3.select("table");
 // Console.log the sightings data from data.js
@@ -34,9 +32,11 @@ buildtable(data);
 let button = d3.select("#filter-btn");
 //    // Select the form
 var form = d3.select("#form");
+
 //    // Create event handlers
 button.on("click", runEnter);
 form.on("submit", runEnter);
+
 //    // Complete the event handler function for the form
 function runEnter() {
   d3.event.preventDefault();
